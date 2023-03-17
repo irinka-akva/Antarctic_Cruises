@@ -1,0 +1,220 @@
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navigation__icon {
+  color: $color-alice-blue;
+
+  @include vp-1023 {
+    width: 38px;
+    height: 20px;
+  }
+
+  @include vp-767 {
+    width: 42px;
+    height: 22px;
+  }
+}
+
+.navigation__logo-wrapper {
+  margin-right: auto;
+}
+
+.navigation__link:hover .navigation__icon,
+.navigation__link:focus .navigation__icon {
+  color: $color-neon-blue;
+}
+
+.navigation__link:active .navigation__icon {
+  color: $color-neon-blue;
+  opacity: 0.7;
+}
+
+.navigation__menu {
+  width: 594px;
+
+  @include vp-1023 {
+    width: 503px;
+  }
+}
+
+.navigation__menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 15px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation__menu-list-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-alice-blue;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $color-neon-blue;
+  }
+
+  &:active {
+    color: $color-neon-blue;
+    opacity: 0.7;
+  }
+
+  @include vp-1023 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+// мобильное меню навигации
+
+.navigation__button {
+  display: none;
+
+  @include vp-767 {
+    position: absolute;
+    display: inline-block;
+    right: 15px;
+    top: 25px;
+    width: 25px;
+    height: 14px;
+    border: none;
+    background-color: $color-transparent;
+    cursor: pointer;
+  }
+}
+
+@include vp-767 {
+  .navigation .navigation__button::before {
+    @include pseudo ();
+    top: 0;
+    right: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $color-alice-blue;
+    box-shadow: 0 6px 0 0 $color-alice-blue, 0 12px 0 0 $color-alice-blue;
+    transition: all 0.4s ease 0s;
+  }
+
+  .navigation .navigation__button:hover::before,
+  .navigation .navigation__button:focus::before {
+    background-color: $color-neon-blue;
+    box-shadow: 0 6px 0 0 $color-neon-blue, 0 12px 0 0 $color-neon-blue;
+  }
+
+  .navigation .navigation__button:active::before {
+    background-color: $color-neon-blue;
+    opacity: 0.7;
+    box-shadow: 0 6px 0 0 $color-neon-blue, 0 12px 0 0 $color-neon-blue;
+  }
+
+  .navigation.is-open .navigation__button::before,
+  .navigation.is-open .navigation__button::after {
+    @include pseudo ();
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 15px;
+    height: 1.5px;
+    background-color: $color-tangaroa;
+    transition: all 0.4s ease 0s;
+  }
+
+  .navigation.is-open .navigation__button::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  .navigation.is-open .navigation__button::after {
+    transform: rotate(-45deg);
+  }
+
+  .navigation.is-open .navigation__button:hover::before,
+  .navigation.is-open .navigation__button:hover::after,
+  .navigation.is-open .navigation__button:focus::before,
+  .navigation.is-open .navigation__button:focus::after {
+    background-color: $color-neon-blue;
+  }
+
+  .navigation.is-open .navigation__button:active::before,
+  .navigation.is-open .navigation__button:active::after {
+    background-color: $color-neon-blue;
+    opacity: 0.7;
+  }
+}
+
+@include vp-767 {
+  .navigation .navigation__menu {
+    display: none;
+  }
+
+  .navigation.is-open .navigation__menu {
+    display: inline-block;
+
+  }
+
+  .navigation.is-open {
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    padding: 20px 15px;
+    flex-direction: column;
+    width: 89%;
+    top: 0;
+    right: 0;
+    min-height: 568px;
+    background-color: $color-alice-blue;
+  }
+
+  .navigation.is-open .navigation__menu {
+    width: 100%;
+  }
+
+  .navigation.is-open .navigation__menu-list {
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+  }
+
+  .navigation.is-open .navigation__menu-list-link {
+    color: $color-tangaroa;
+    font-size: 18px;
+    line-height: 22px;
+
+    &:hover,
+    &:focus {
+      color: $color-neon-blue;
+    }
+
+    &:active {
+      color: $color-neon-blue;
+      opacity: 0.7;
+    }
+  }
+
+  .navigation.is-open .navigation__icon {
+    color: $color-tangaroa;
+  }
+
+  .navigation.is-open .navigation__link:hover .navigation__icon,
+  .navigation__link:focus .navigation__icon {
+    color: $color-neon-blue;
+  }
+
+  .navigation.is-open .navigation__link:active .navigation__icon {
+    color: $color-neon-blue;
+    opacity: 0.7;
+  }
+
+  .navigation.is-open .navigation__logo-wrapper {
+    margin-bottom: 30px;
+  }
+}
