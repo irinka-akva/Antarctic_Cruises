@@ -2,9 +2,9 @@
 <html lang="ru" class="page">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Antarctic_Cruises">
 
   <link rel="preload" href="fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -21,38 +21,38 @@
     <header class="header">
       <div class="container">
         <nav class="navigation" data-header>
-          <div class="navigation__overlay"></div>
-            <div class="navigation__logo-wrapper">
-              <a class="navigation__link" href="index.html">
-                <span class="visually-hidden">Логотип компании Круизы в Антарктику.</span>
-                <svg class="navigation__icon" width="70" height="38" viewBox="0 0 70 38" fill="currentColor">
-                  <use href="img/sprite.svg#logo"></use>
-                </svg>
-              </a>
-              <button class="navigation__button" type="button" data-burger></button>
-            </div>
-            <div class="navigation__menu">
-              <ul class="navigation__menu-list">
-                <li class="navigation__menu-list-item">
-                  <a class="navigation__menu-list-link" href="#advantages" data-close-menu>Преимущества</a>
-                </li>
-                <li class="navigation__menu-list-item">
-                  <a class="navigation__menu-list-link" href="#" data-close-menu>Направления</a>
-                </li>
-                <li class="navigation__menu-list-item">
-                  <a class="navigation__menu-list-link" href="#cruises" data-close-menu>Ближайшие круизы</a>
-                </li>
-                <li class="navigation__menu-list-item">
-                  <a class="navigation__menu-list-link" href="#contacts" data-close-menu>Контакты</a>
-                </li>
-              </ul>
-            </div>
-
+          <div class="navigation__overlay" data-close-menu>
+          </div>
+          <div class="navigation__logo-wrapper">
+            <a class="navigation__link" href="index.html">
+              <span class="visually-hidden">Логотип компании Круизы в Антарктику.</span>
+              <svg class="navigation__icon" width="70" height="38" viewBox="0 0 70 38" fill="currentColor">
+                <use href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <button class="navigation__button" type="button" data-burger></button>
+          </div>
+          <div class="navigation__menu">
+            <ul class="navigation__menu-list">
+              <li class="navigation__menu-list-item">
+                <a class="navigation__menu-list-link" href="#advantages" data-close-menu>Преимущества</a>
+              </li>
+              <li class="navigation__menu-list-item">
+                <a class="navigation__menu-list-link" href="#" data-close-menu>Направления</a>
+              </li>
+              <li class="navigation__menu-list-item">
+                <a class="navigation__menu-list-link" href="#cruises" data-close-menu>Ближайшие круизы</a>
+              </li>
+              <li class="navigation__menu-list-item">
+                <a class="navigation__menu-list-link" href="#contacts" data-close-menu>Контакты</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
     <main>
-      <section class="main-block" data-close-menu>
+      <section class="main-block">
         <div class="container">
           <div class="main-block__wrapper">
             <h1 class="main-block__title">Круизы в&nbsp;Антарктику</h1>
@@ -60,7 +60,7 @@
           </div>
         </div>
       </section>
-      <section class="trips" data-close-menu>
+      <section class="trips">
         <div class="container">
           <div class="trips__wrapper">
             <div class="trips__text-wrapper">
@@ -79,24 +79,95 @@
         </div>
       </section>
 
-      <section id="advantages"> Секция 2</section>
-      <section> Секция 2</section>
-      <section> Секция 2</section>
-      <section> Секция 2</section>
-      <section> Секция 2</section>
-      <section> Секция 2</section>
-      <section> Секция 2</section>
+      <section class="advantages" id="advantages">
+        <div class="container">
+          <h2 class="advantages__title">Преимущества</h2>
+          <ul class="advantages__list">
+            <li class="advantages__list-item">
+              <h3 class="advantages__list-item-title advantages__list-item-title--ship">Небольшой круизный лайнер</h3>
+              <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума и&nbsp;очередей
+                и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+            </li>
+            <li class="advantages__list-item">
+              <h3 class="advantages__list-item-title advantages__list-item-title--tick">Система <br>все включено</h3>
+              <p>Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;. Великолепные блюда
+                и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
+            </li>
+            <li class="advantages__list-item">
+              <h3 class="advantages__list-item-title advantages__list-item-title--zodiac">Экскурсионные туры на&nbsp;Zodiac</h3>
+              <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac
+                c&nbsp;опытными экскурсоводами.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
       <section id="cruises"> Секция 2</section>
-      <section> Секция 2</section>
-      <section> Секция 2</section>
-      <section> Секция 2</section>
-      <section> Секция 2</section>
-      <section> Секция 2</section>
-      <section> Секция 2</section>
+
       <section id="contacts"> Секция 2</section>
     </main>
-    <footer>
-      <div class="container"></div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <nav class="navigation navigation--footer">
+            <h2 class="visually-hidden">Навигация по странице.</h2>
+            <a class="navigation__link navigation__link--footer" href="index.html">
+              <span class="visually-hidden">Логотип компании Круизы в Антарктику.</span>
+              <svg class="navigation__icon" width="70" height="38" viewBox="0 0 70 38" fill="currentColor">
+                <use href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <div class="navigation__menu navigation__menu--footer">
+              <h2 class="visually-hidden">Мы в социальных сетях.</h2>
+              <ul class="navigation__menu-list navigation__menu-list--footer">
+                <li class="navigation__menu-list-item">
+                  <a class="navigation__menu-list-link navigation__menu-list-link--footer" href="#advantages"
+                    data-close-menu>Преимущества</a>
+                </li>
+                <li class="navigation__menu-list-item">
+                  <a class="navigation__menu-list-link navigation__menu-list-link--footer" href="#"
+                    data-close-menu>Направления</a>
+                </li>
+                <li class="navigation__menu-list-item">
+                  <a class="navigation__menu-list-link navigation__menu-list-link--footer" href="#cruises"
+                    data-close-menu>Ближайшие круизы</a>
+                </li>
+                <li class="navigation__menu-list-item">
+                  <a class="navigation__menu-list-link navigation__menu-list-link--footer" href="#contacts"
+                    data-close-menu>Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <ul class="footer__social-network-list">
+            <li class="footer__social-network-item">
+              <a class="footer__social-network-link" href="#">
+                <span class="visually-hidden">Одноклассники.</span>
+                <svg class="footer__social-network-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                  <use href="img/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-network-item">
+              <a class="footer__social-network-link" href="#">
+                <span class="visually-hidden">Яндекс-дзен.</span>
+                <svg class="footer__social-network-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                  <use href="img/sprite.svg#dzen"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-network-item">
+              <a class="footer__social-network-link" href="#">
+                <span class="visually-hidden">Reddit.</span>
+                <svg class="footer__social-network-icon" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                  <use href="img/sprite.svg#reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </div>
 

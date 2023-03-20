@@ -27,6 +27,7 @@
   @include vp-767 {
     row-gap: 50px;
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 }
 

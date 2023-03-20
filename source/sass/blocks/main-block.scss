@@ -8,16 +8,36 @@
   background-position: center;
   background-size: cover;
 
+  @media (min-width: $vp-1024) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-background-desktop-2x.jpg");
+      min-height: 650px;
+      width: auto;
+    }
+  }
+
   @include vp-1023 {
     min-height: 638px;
     background-image: url("../img/promo-background-tablet.jpg");
     filter: none;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-background-tablet-2x.jpg");
+      min-height: 638px;
+      width: auto;
+    }
   }
 
   @include vp-767 {
     min-height: 500px;
     background-image: url("../img/promo-background-mobile.jpg");
     filter: none;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/promo-background-mobile-2x.jpg");
+      min-height: 500px;
+      width: auto;
+    }
   }
 }
 

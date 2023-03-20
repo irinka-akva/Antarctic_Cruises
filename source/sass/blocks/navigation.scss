@@ -2,6 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @include vp-767 {
+    &--footer {
+      flex-direction: column;
+    }
+  }
 }
 
 .navigation__icon {
@@ -22,6 +28,21 @@
   margin-right: auto;
 }
 
+.navigation__link {
+  &--footer {
+    margin-right: 40px;
+
+    @include vp-1023 {
+      margin-right: 25px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 30px;
+      margin-right: auto;
+    }
+  }
+}
+
 .navigation__link:hover .navigation__icon,
 .navigation__link:focus .navigation__icon {
   color: $color-neon-blue;
@@ -37,17 +58,41 @@
 
   @include vp-1023 {
     width: 503px;
+
+    &--footer {
+      width: 441px;
+    }
+  }
+
+  @include vp-767 {
+    &--footer {
+      margin-right: auto;
+      width: 100%;
+      margin-bottom: 30px;
+    }
   }
 }
 
 .navigation__menu-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  column-gap: 33px;
   row-gap: 15px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @include vp-1023 {
+    column-gap: 23px;
+  }
+
+  @include vp-767 {
+    &--footer {
+      flex-direction: column;
+      row-gap: 13px;
+    }
+  }
 }
 
 .navigation__menu-list-link {
@@ -70,6 +115,12 @@
   @include vp-1023 {
     font-size: 14px;
     line-height: 17px;
+
+    &--footer {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+    }
   }
 }
 
@@ -155,11 +206,14 @@
 @include vp-767 {
   .navigation .navigation__menu {
     display: none;
+
+    &--footer {
+      display: inline-block;
+    }
   }
 
   .navigation.is-open .navigation__menu {
     display: inline-block;
-
   }
 
   .navigation.is-open {
@@ -172,6 +226,7 @@
     right: 0;
     min-height: 568px;
     background-color: $color-alice-blue;
+
   }
 
   .navigation.is-open .navigation__menu {
@@ -216,5 +271,24 @@
 
   .navigation.is-open .navigation__logo-wrapper {
     margin-bottom: 30px;
+  }
+
+  .navigation__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: rgba(0, 43, 102, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s, opacity 0.5s ease-in-out;
+  }
+
+  .navigation.is-open .navigation__overlay {
+    visibility: visible;
+    opacity: 1;
+    transition: visible 0.5, opacity 0.5s ease-in;
   }
 }
