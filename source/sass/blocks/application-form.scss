@@ -1,0 +1,115 @@
+.application-form {
+  padding: 50px 12.4%;
+  background: $color-tangaroa;
+  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  width: 100%;
+
+  @include vp-1023 {
+    padding: 49px;
+    width: 59.4%;
+    }
+
+    @include vp-767 {
+      padding: 40px 38px;
+      width: 100%;
+      }
+}
+
+.application-form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.application-form__text {
+  display: block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-alice-blue;
+  margin-bottom: 35px;
+
+  @include vp-767 {
+  line-height: 25px;
+    }
+}
+
+.application-form__input input {
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-tangaroa;
+  margin-bottom: 20px;
+  padding: 11px 16px;
+  border: 2px solid transparent;
+
+  &::placeholder {
+    color: rgba(1, 28, 64, 0.7);
+  }
+}
+
+.application-form__checkbox-wrapper label {
+  position: relative;
+  display: block;
+  font-weight: 400;
+font-size: 10px;
+line-height: 13px;
+color: $color-alice-blue;
+padding-left: 23px;
+margin-bottom: 35px;
+}
+
+.application-form__control-mark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border: 2px solid transparent;
+  background-color: $color-alice-blue;
+}
+
+.application-form__checkbox-wrapper input:checked + .application-form__control-mark::before {
+  @include pseudo ();
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 9px;
+  height: 7px;
+  background-image: url("../img/svg/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.application-form__checkbox-wrapper input:not(:disabled):hover + .application-form__control-mark {
+  border-color: $color-neon-blue;
+}
+
+.application-form__checkbox-wrapper input:not(:disabled):focus + .application-form__control-mark {
+  border-color: $color-neon-blue;
+}
+
+.application-form__checkbox-wrapper input:disabled + .application-form__control-mark,
+.application-form__checkbox-wrapper input:disabled ~ .application-form__checkbox-text {
+  opacity: 0.4;
+}
+
+.application-form input {
+  &:hover {
+    border-color: $color-neon-blue;
+  }
+
+  &:focus {
+    border-color: $color-neon-blue;
+    outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}
