@@ -1,10 +1,14 @@
 .footer {
-padding: 50px 0;
-background-color: $color-tangaroa;
+  padding: 50px 0;
+  background-color: $color-tangaroa;
 
-@include vp-767 {
-  padding: 40px 0;
-}
+  @include vp-1023 {
+    padding: 48px 0;
+  }
+
+  @include vp-767 {
+    padding: 40px 0;
+  }
 }
 
 .footer__wrapper {
@@ -13,7 +17,7 @@ background-color: $color-tangaroa;
   justify-content: space-between;
 
   @include vp-767 {
-   flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -33,8 +37,9 @@ background-color: $color-tangaroa;
   }
 
   @include vp-767 {
-
+    margin-left: -3px;
     max-width: 100%;
+    column-gap: 19px;
   }
 }
 
@@ -42,9 +47,9 @@ background-color: $color-tangaroa;
   cursor: pointer;
   display: flex;
   align-items: center;
- justify-content: center;
- width: 100%;
- height: 100%;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .footer__social-network-icon {

@@ -38,7 +38,7 @@
 .card__front-title {
   margin: 0;
   position: absolute;
-  bottom: 30px;
+  bottom: 23px;
   left: 11.5%;
   max-width: 80%;
   max-height: 85%;
@@ -49,11 +49,12 @@
   overflow: hidden;
 
   @include vp-1023 {
-    bottom: 35px;
+    bottom: 25px;
   }
 
   @include vp-767 {
-    bottom: 25px;
+    bottom: 17px;
+    left: 9%;
   }
 }
 
@@ -64,11 +65,11 @@
   padding: 28px 25px 15px 25px;
 
   @include vp-1023 {
-    padding: 35px 35px 10px 35px;
+    padding: 30px 35px 10px 35px;
   }
 
-  @include vp-1023 {
-    padding: 35px 25px 10px 25px;
+  @include vp-767 {
+    padding: 30px 25px 10px 25px;
   }
 }
 
@@ -97,10 +98,10 @@
   color: $color-quartz;
 }
 
-.card:hover>.card__front {
+.card:hover > .card__front {
   display: none;
 }
 
-.card:hover>.card__back {
+.card:hover > .card__back {
   display: block;
 }

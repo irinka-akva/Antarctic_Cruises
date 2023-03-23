@@ -1,24 +1,28 @@
 .application-form {
-  padding: 50px 12.4%;
+  padding: 45px 12.4% 49px 12.4%;
   background: $color-tangaroa;
-  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   width: 100%;
 
   @include vp-1023 {
-    padding: 49px;
+    padding: 45px 49px 49px 49px;
     width: 59.4%;
-    }
+  }
 
-    @include vp-767 {
-      padding: 40px 38px;
-      width: 100%;
-      }
+  @include vp-767 {
+    padding: 35px 30px 41px 30px;
+    width: 100%;
+  }
 }
 
 .application-form__fieldset {
   border: none;
   margin: 0;
   padding: 0;
+
+  @include vp-767 {
+    margin-bottom: -8px;
+  }
 }
 
 .application-form__text {
@@ -27,11 +31,12 @@
   font-size: 18px;
   line-height: 27px;
   color: $color-alice-blue;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 
   @include vp-767 {
-  line-height: 25px;
-    }
+    line-height: 25px;
+    text-align: center;
+  }
 }
 
 .application-form__input input {
@@ -41,8 +46,12 @@
   line-height: 21px;
   color: $color-tangaroa;
   margin-bottom: 20px;
-  padding: 11px 16px;
+  padding: 9px 16px 10px 16px;
   border: 2px solid transparent;
+
+  @include vp-767 {
+    padding: 11px 16px 9px 15px;
+  }
 
   &::placeholder {
     color: rgba(1, 28, 64, 0.7);
@@ -53,11 +62,19 @@
   position: relative;
   display: block;
   font-weight: 400;
-font-size: 10px;
-line-height: 13px;
-color: $color-alice-blue;
-padding-left: 23px;
-margin-bottom: 35px;
+  font-size: 10px;
+  line-height: 13px;
+  color: $color-alice-blue;
+  padding-left: 23px;
+  padding-top: 3px;
+  margin-bottom: 33px;
+
+  @include vp-767 {
+    line-height: 12px;
+    padding-left: 28px;
+    padding-right: 45px;
+    margin-bottom: 30px;
+  }
 }
 
 .application-form__control-mark {
@@ -70,6 +87,13 @@ margin-bottom: 35px;
   height: 18px;
   border: 2px solid transparent;
   background-color: $color-alice-blue;
+
+  @include vp-767 {
+    top: 6px;
+    bottom: auto;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .application-form__checkbox-wrapper input:checked + .application-form__control-mark::before {

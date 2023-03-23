@@ -1,5 +1,5 @@
 .advantages {
-  padding: 120px 0;
+  padding: 110px 0;
   background-color: $color-quartz;
   background-image: url("../img/advantages-background-desktop.jpg");
   min-height: 562px;
@@ -17,7 +17,7 @@
   }
 
   @include vp-1023 {
-    padding: 100px 0;
+    padding: 90px 0;
     min-height: 588px;
     background-image: url("../img/advantages-background-tablet.jpg");
 
@@ -29,7 +29,7 @@
   }
 
   @include vp-767 {
-    padding: 65px 0;
+    padding: 56px 0;
     min-height: 997px;
     background-image: url("../img/advantages-background-mobile.jpg");
 
@@ -43,7 +43,7 @@
 
 .advantages__title {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -57,7 +57,7 @@
   @include vp-767 {
     font-size: 24px;
     line-height: 36px;
-    margin-bottom: 40px;
+    margin-bottom: 31px;
   }
 }
 
@@ -75,31 +75,30 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    gap: 30px;
   }
 }
 
 .advantages__list-item {
   position: relative;
   background-color: $color-alice-blue;
-  padding: 30px 30px 50px 30px;
+  padding: 30px 30px 45px 30px;
 
   @include vp-1023 {
-    padding: 26px 15px 25px 20px;
+    padding: 17px 15px 19px 20px;
   }
 
   @include vp-767 {
-    padding: 25px 15px 25px 20px;
+    padding: 17px 15px 19px 20px;
   }
 }
 
 .advantages__list-item-title {
   margin: 0;
-  margin-bottom: 20px;
-  padding-top: 57px;
+  margin-bottom: 10px;
+  padding-top: 51px;
   font-weight: 500;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 25px;
 
   br {
     display: none;
@@ -108,6 +107,10 @@
   @include vp-1023 {
     br {
       display: inline;
+    }
+
+    &--zodiac {
+      margin-bottom: 20px;
     }
   }
 
@@ -166,6 +169,11 @@
       width: 36px;
       height: 26px;
     }
+  }
+
+  @include vp-767 {
+    padding-top: 55px;
+    margin-bottom: 9px;
   }
 }
 

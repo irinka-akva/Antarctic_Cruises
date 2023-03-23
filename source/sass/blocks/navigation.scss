@@ -37,7 +37,7 @@
     }
 
     @include vp-767 {
-      margin-bottom: 30px;
+      margin-bottom: 14px;
       margin-right: auto;
     }
   }
@@ -68,7 +68,7 @@
     &--footer {
       margin-right: auto;
       width: 100%;
-      margin-bottom: 30px;
+      margin-bottom: 18px;
     }
   }
 }
@@ -81,6 +81,7 @@
   row-gap: 15px;
   margin: 0;
   padding: 0;
+  padding-bottom: 5px;
   list-style-type: none;
 
   @include vp-1023 {
@@ -90,7 +91,7 @@
   @include vp-767 {
     &--footer {
       flex-direction: column;
-      row-gap: 13px;
+      row-gap: 8px;
     }
   }
 }
@@ -132,7 +133,7 @@
   @include vp-767 {
     position: absolute;
     display: inline-block;
-    right: 15px;
+    right: 10px;
     top: 25px;
     width: 25px;
     height: 14px;
@@ -169,13 +170,13 @@
   .navigation.is-open .navigation__button::before,
   .navigation.is-open .navigation__button::after {
     @include pseudo ();
-    top: 0px;
+    top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     margin: auto;
-    width: 15px;
-    height: 1.5px;
+    width: 18px;
+    height: 2px;
     background-color: $color-tangaroa;
     transition: all 0.4s ease 0s;
   }
@@ -214,29 +215,25 @@
 
   .navigation.is-open .navigation__menu {
     display: inline-block;
+    width: 100%;
   }
 
   .navigation.is-open {
     position: absolute;
     transition: all 0.5s ease 0s;
-    padding: 20px 15px;
+    padding: 20px 25px;
     flex-direction: column;
     width: 89%;
     top: 0;
     right: 0;
     min-height: 568px;
     background-color: $color-alice-blue;
-
-  }
-
-  .navigation.is-open .navigation__menu {
-    width: 100%;
   }
 
   .navigation.is-open .navigation__menu-list {
     flex-direction: column;
     justify-content: space-between;
-    row-gap: 30px;
+    row-gap: 26px;
   }
 
   .navigation.is-open .navigation__menu-list-link {
@@ -270,7 +267,8 @@
   }
 
   .navigation.is-open .navigation__logo-wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    margin-left: -10px;
   }
 
   .navigation__overlay {

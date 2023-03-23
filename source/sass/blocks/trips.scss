@@ -1,15 +1,15 @@
 .trips {
-  padding-top: 120px;
-  padding-bottom: 145px;
+  padding-top: 110px;
+  padding-bottom: 136px;
 
   @include vp-1023 {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 90px;
+    padding-bottom: 93px;
   }
 
   @include vp-767 {
-    padding-top: 65px;
-    padding-bottom: 82px;
+    padding-top: 57px;
+    padding-bottom: 83px;
   }
 }
 
@@ -25,7 +25,7 @@
   }
 
   @include vp-767 {
-    row-gap: 50px;
+    row-gap: 45px;
     grid-template-columns: 1fr;
     justify-items: center;
   }
@@ -53,7 +53,8 @@
 
 .trips__text-wrapper h2 {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 23px;
+  padding-top: 2px;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -63,9 +64,10 @@
   }
 
   @include vp-1023 {
+    padding-top: 0;
     font-size: 26px;
     line-height: 36px;
-    margin-bottom: 30px;
+    margin-bottom: 17px;
 
     br {
       display: inline-block;
@@ -75,6 +77,7 @@
   @include vp-767 {
     font-size: 24px;
     line-height: 34px;
+    margin-bottom: 14px;
   }
 }
 
