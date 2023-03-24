@@ -59,19 +59,12 @@
   font-size: 28px;
   line-height: 42px;
 
-  br {
-    display: none;
-  }
-
   @include vp-1023 {
     padding-top: 0;
+    padding-right: 40px;
     font-size: 26px;
     line-height: 36px;
     margin-bottom: 17px;
-
-    br {
-      display: inline-block;
-    }
   }
 
   @include vp-767 {
