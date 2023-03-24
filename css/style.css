@@ -1371,10 +1371,6 @@ button,
   line-height: 42px;
 }
 
-.trips__text-wrapper h2 br {
-  display: none;
-}
-
 .trips__text-wrapper p {
   margin: 0;
   font-weight: 400;
@@ -1795,13 +1791,10 @@ button,
 
   .trips__text-wrapper h2 {
     padding-top: 0;
+    padding-right: 40px;
     font-size: 26px;
     line-height: 36px;
     margin-bottom: 17px;
-  }
-
-  .trips__text-wrapper h2 br {
-    display: inline-block;
   }
 
   .trips__text-wrapper p {
