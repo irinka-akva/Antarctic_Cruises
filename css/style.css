@@ -646,7 +646,7 @@ button,
 .advantages {
   padding: 110px 0;
   background-color: #d8d8d9;
-  background-image: url("../img/advantages-background-desktop.jpg");
+  background-image: url("../img/advantages-background-desktop.webp");
   min-height: 562px;
   width: auto;
   background-repeat: no-repeat;
@@ -1023,7 +1023,7 @@ button,
 }
 
 .contacts__map-wrapper {
-  background-image: url("../img/map-desktop.png");
+  background-image: url("../img/map-desktop.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1172,7 +1172,7 @@ button,
   min-height: 555px;
   width: auto;
   background-color: #d8d8d9;
-  background-image: url("../img/form-background-desktop.jpg");
+  background-image: url("../img/form-background-desktop.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1227,7 +1227,7 @@ button,
   min-height: 650px;
   width: auto;
   background-color: #011c40;
-  background-image: url("../img/promo-background-desktop.jpg");
+  background-image: url("../img/promo-background-desktop.webp");
   -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   background-repeat: no-repeat;
@@ -1498,24 +1498,24 @@ button,
 
 @media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1024px) and (min-resolution: 2dppx) {
   .advantages {
-    background-image: url("../img/advantages-background-desktop-2x.jpg");
+    background-image: url("../img/advantages-background-desktop-2x.webp");
     min-height: 562px;
     width: auto;
   }
 
   .contacts__map-wrapper {
-    background-image: url("../img/map-desktop-2x.png");
+    background-image: url("../img/map-desktop-2x.webp");
     background-size: cover;
   }
 
   .form {
-    background-image: url("../img/form-background-desktop-2x.jpg");
+    background-image: url("../img/form-background-desktop-2x.webp");
     min-height: 555px;
     width: auto;
   }
 
   .main-block {
-    background-image: url("../img/promo-background-desktop-2x.jpg");
+    background-image: url("../img/promo-background-desktop-2x.webp");
     min-height: 650px;
     width: auto;
   }
@@ -1529,7 +1529,7 @@ button,
   .advantages {
     padding: 90px 0;
     min-height: 588px;
-    background-image: url("../img/advantages-background-tablet.jpg");
+    background-image: url("../img/advantages-background-tablet.webp");
   }
 
   .advantages__title {
@@ -1616,7 +1616,7 @@ button,
   }
 
   .contacts__map-wrapper {
-    background-image: url("../img/map-tablet.png");
+    background-image: url("../img/map-tablet.webp");
   }
 
   .contacts__map {
@@ -1662,7 +1662,7 @@ button,
 
   .form {
     min-height: 805px;
-    background-image: url("../img/form-background-tablet.jpg");
+    background-image: url("../img/form-background-tablet.webp");
   }
 
   .form {
@@ -1710,7 +1710,7 @@ button,
 
   .main-block {
     min-height: 638px;
-    background-image: url("../img/promo-background-tablet.jpg");
+    background-image: url("../img/promo-background-tablet.webp");
     -webkit-filter: none;
     filter: none;
   }
@@ -1804,24 +1804,24 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .advantages {
-    background-image: url("../img/advantages-background-tablet-2x.jpg");
+    background-image: url("../img/advantages-background-tablet-2x.webp");
     min-height: 588px;
     width: auto;
   }
 
   .contacts__map-wrapper {
-    background-image: url("../img/map-tablet-2x.png");
+    background-image: url("../img/map-tablet-2x.webp");
     background-size: cover;
   }
 
   .form {
-    background-image: url("../img/form-background-tablet-2x.jpg");
+    background-image: url("../img/form-background-tablet-2x.webp");
     min-height: 805px;
     width: auto;
   }
 
   .main-block {
-    background-image: url("../img/promo-background-tablet-2x.jpg");
+    background-image: url("../img/promo-background-tablet-2x.webp");
     min-height: 638px;
     width: auto;
   }
@@ -1835,7 +1835,7 @@ button,
   .advantages {
     padding: 56px 0;
     min-height: 997px;
-    background-image: url("../img/advantages-background-mobile.jpg");
+    background-image: url("../img/advantages-background-mobile.webp");
   }
 
   .advantages__title {
@@ -1932,7 +1932,7 @@ button,
   }
 
   .contacts__map-wrapper {
-    background-image: url("../img/map-mobile.png");
+    background-image: url("../img/map-mobile.webp");
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
@@ -1970,7 +1970,7 @@ button,
 
   .form {
     min-height: 760px;
-    background-image: url("../img/form-background-mobile.jpg");
+    background-image: url("../img/form-background-mobile.webp");
   }
 
   .form {
@@ -2003,7 +2003,7 @@ button,
 
   .main-block {
     min-height: 500px;
-    background-image: url("../img/promo-background-mobile.jpg");
+    background-image: url("../img/promo-background-mobile.webp");
     -webkit-filter: none;
     filter: none;
   }
@@ -2266,24 +2266,24 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .advantages {
-    background-image: url("../img/advantages-background-mobile-2x.jpg");
+    background-image: url("../img/advantages-background-mobile-2x.webp");
     min-height: 997px;
     width: auto;
   }
 
   .contacts__map-wrapper {
-    background-image: url("../img/map-mobile-2x.png");
+    background-image: url("../img/map-mobile-2x.webp");
     background-size: cover;
   }
 
   .form {
-    background-image: url("../img/form-background-mobile-2x.jpg");
+    background-image: url("../img/form-background-mobile-2x.webp");
     min-height: 760px;
     width: auto;
   }
 
   .main-block {
-    background-image: url("../img/promo-background-mobile-2x.jpg");
+    background-image: url("../img/promo-background-mobile-2x.webp");
     min-height: 500px;
     width: auto;
   }
