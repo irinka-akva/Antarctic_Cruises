@@ -26,7 +26,7 @@
 }
 
 .contacts__map-wrapper {
-  background-image: url("../img/map-desktop.png");
+  background-image: url("../img/map-desktop.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,26 +34,26 @@
 
   @media (min-width: $vp-1024) {
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/map-desktop-2x.png");
+      background-image: url("../img/map-desktop-2x.webp");
       background-size: cover;
     }
   }
 
   @include vp-1023 {
-    background-image: url("../img/map-tablet.png");
+    background-image: url("../img/map-tablet.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/map-tablet-2x.png");
+      background-image: url("../img/map-tablet-2x.webp");
       background-size: cover;
     }
   }
 
   @include vp-767 {
-    background-image: url("../img/map-mobile.png");
+    background-image: url("../img/map-mobile.webp");
     grid-row: 2/3;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/map-mobile-2x.png");
+      background-image: url("../img/map-mobile-2x.webp");
       background-size: cover;
     }
   }
