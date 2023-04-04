@@ -126,8 +126,10 @@
 }
 
 .contacts__tel {
+  display: inline-block;
+
   &:hover,
-  &focus {
+  &:focus {
     color: $color-neon-blue;
   }
 

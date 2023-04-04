@@ -1,8 +1,19 @@
 .card {
   position: relative;
   cursor: pointer;
-  min-height: 386px;
+  height: 386px;
   min-width: 0;
+
+  @include vp-1023 {
+    aspect-ratio: 309 / 386;
+    width: 100%;
+    height: auto;
+    min-height: 386px;
+  }
+
+  @include vp-767 {
+    aspect-ratio: 270 / 386;
+  }
 }
 
 
@@ -15,19 +26,19 @@
 
 .card__front img {
   display: block;
+  margin: 0 auto;
   height: 386px;
-  width: auto;
+  width: 100%;
   object-fit: cover;
+  margin: 0;
 
   @include vp-1023 {
-    height: auto;
-    width: 437px;
+    height: 100%;
   }
 
   @include vp-767 {
     height: auto;
     width: 717px;
-    max-height: 386px;
   }
 }
 
@@ -63,6 +74,7 @@
   background-color: $color-tangaroa;
   color: $color-alice-blue;
   padding: 28px 25px 15px 25px;
+  overflow-y: auto;
 
   @include vp-1023 {
     padding: 30px 35px 10px 35px;
@@ -98,10 +110,12 @@
   color: $color-quartz;
 }
 
-.card:hover > .card__front {
+.card:hover>.card__front,
+.card:focus-visible>.card__front {
   display: none;
 }
 
-.card:hover > .card__back {
+.card:hover>.card__back,
+.card:focus-visible>.card__back {
   display: block;
 }

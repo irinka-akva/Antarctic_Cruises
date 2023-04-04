@@ -6,7 +6,7 @@
 
   @include vp-1023 {
     padding: 45px 49px 49px 49px;
-    width: 59.4%;
+    width: 52.5%;
   }
 
   @include vp-767 {
@@ -45,12 +45,13 @@
   font-size: 14px;
   line-height: 21px;
   color: $color-tangaroa;
-  margin-bottom: 20px;
-  padding: 9px 16px 10px 16px;
+  margin-bottom: 19px;
+  padding: 10px 16px 9px 13px;
   border: 2px solid transparent;
 
   @include vp-767 {
     padding: 11px 16px 9px 15px;
+    margin-bottom: 20px;
   }
 
   &::placeholder {
