@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {Burger} from './modules/menu/burger';
-
+import {cardsActionHandler} from './modules/cards';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -22,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
     const burger = new Burger();
     burger.init();
+    cardsActionHandler();
   });
 });
 

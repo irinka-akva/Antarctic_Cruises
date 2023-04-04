@@ -110,12 +110,20 @@
   color: $color-quartz;
 }
 
-.card:hover>.card__front,
-.card:focus-visible>.card__front {
+.card:hover>.card__front {
   display: none;
 }
 
-.card:hover>.card__back,
-.card:focus-visible>.card__back {
+.card:hover>.card__back {
   display: block;
 }
+
+// .card:hover>.card__front,
+// .card:focus-visible>.card__front {
+//   display: none;
+// }
+
+// .card:hover>.card__back,
+// .card:focus-visible>.card__back {
+//   display: block;
+// }
