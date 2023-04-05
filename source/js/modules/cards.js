@@ -1,9 +1,7 @@
 const catalog = document.querySelector('[data-catalog]');
 const cards = catalog.querySelectorAll('[data-card]');
-const cardsFront = catalog.querySelectorAll('[data-card-front]');
-const cardsBack = catalog.querySelectorAll('[data-card-back]');
 
-const addActiveClass = () => {
+const addDisplayStyle = () => {
   for (let i = 0; i < cards.length; i++) {
     if (cards[i].classList.contains('focus-visible')) {
       let cardActive = cards[i];
@@ -14,35 +12,25 @@ const addActiveClass = () => {
       let backActive = cardActive.querySelector('[data-card-back]');
       backActive.style.display = 'block';
 
+    } else if (!cards[i].classList.contains('focus-visible')) {
+      let cardPassive = cards[i];
+
+      let frontPassive = cardPassive.querySelector('[data-card-front]');
+      frontPassive.style.display = '';
+
+      let backPassive = cardPassive.querySelector('[data-card-back]');
+      backPassive.style.display = '';
     } else {
-      cardsFront.forEach((element)=>{
-        element.style.display = 'block';
-      });
-      cardsBack.forEach((element)=>{
-        element.style.display = 'none';
-      });
+      return;
     }
   }
 };
 
-
-
-// const getActionCard = () => {
-//   addActiveClass();
-
-
-//   let activeFront = cardActive.querySelector('[data-card-front]');
-//   console.log(activeFront);
-// .style.display = 'none';
-
-// cardActive.querySelector('[data-card-back]').style.display = 'block';
-// };
-
 const cardsActionHandler = () => {
   cards.forEach((element) => {
-    // element.addEventListener('mouseover', addActiveClass);
-    element.addEventListener('touchstart', addActiveClass);
-    element.addEventListener('focus', addActiveClass);
+    element.addEventListener('touchstart', addDisplayStyle);
+    element.addEventListener('keydown', addDisplayStyle);
+    element.addEventListener('focus', addDisplayStyle);
   });
 };
 

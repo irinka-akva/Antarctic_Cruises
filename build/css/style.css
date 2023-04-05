@@ -946,7 +946,6 @@ button,
 
 .card__front img {
   display: block;
-  margin: 0 auto;
   height: 386px;
   width: 100%;
   -o-object-fit: cover;

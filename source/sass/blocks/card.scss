@@ -26,7 +26,6 @@
 
 .card__front img {
   display: block;
-  margin: 0 auto;
   height: 386px;
   width: 100%;
   object-fit: cover;
@@ -110,20 +109,10 @@
   color: $color-quartz;
 }
 
-.card:hover>.card__front {
+.card:hover > .card__front {
   display: none;
 }
 
-.card:hover>.card__back {
+.card:hover > .card__back {
   display: block;
 }
-
-// .card:hover>.card__front,
-// .card:focus-visible>.card__front {
-//   display: none;
-// }
-
-// .card:hover>.card__back,
-// .card:focus-visible>.card__back {
-//   display: block;
-// }
